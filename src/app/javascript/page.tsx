@@ -1,14 +1,17 @@
-import { TimelineItem } from "@/components/timelineitem/TimelineItem";
-import styles from "./page.module.scss";
+import TimelineItem from "@/components/timelineitem/TimelineItem";
+import styles from "../page.module.scss";
 import { TECH_DESCRIPTIONS, TIMELINE_DATA } from "@/data/content";
+import { main } from "framer-motion/m";
 
 export default function JavascriptPage() {
   return (
     <main className={styles.main}>
-      <h1>JavaScript – Making the Web Interactive</h1>
+      <h1 className={styles.subtitle}>
+        JavaScript – Making the Web Interactive
+      </h1>
 
       <div className={styles.timeline}>
-        {TIMELINE_DATA.html.map((item) => (
+        {TIMELINE_DATA.javascript.map((item) => (
           <TimelineItem key={item.year} year={item.year} title={item.title} />
         ))}
       </div>

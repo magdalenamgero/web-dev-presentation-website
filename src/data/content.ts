@@ -1,3 +1,5 @@
+import { html, title } from "framer-motion/m";
+
 export const MAIN_CARDS = [
   {
     title: "HTML",
@@ -21,20 +23,20 @@ export const TIMELINE_DATA = {
     {
       year: "1991",
       title: "Birth of HTML",
-      text: "Tim Berners-Lee releases the first version of HTML.",
-      image: "/images/html/1991.png",
+      text: "Tim Berners-Lee creates the first version of HTML.",
+      image: "/images/html-headings.png",
+      code: "<h1>Hello World</h1>",
     },
     {
       year: "1995",
       title: "HTML 2.0",
-      text: "The first standardized version of HTML.",
-      image: "/images/html/html2.png",
+      text: "Standardization begins...",
+      image: "/images/HTML-5-Badge-Logo.png",
     },
     {
       year: "1997",
       title: "HTML 3.2",
-      text: "Added tables, applets, improved layout.",
-      image: "/images/html/html3.2.png",
+      text: "Tables, applets, layout improvements...",
     },
   ],
   css: [
