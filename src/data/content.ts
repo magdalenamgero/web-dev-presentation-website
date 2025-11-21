@@ -1,4 +1,4 @@
-import { html, title } from "framer-motion/m";
+import { desc, html, title } from "framer-motion/m";
 
 export const MAIN_CARDS = [
   {
@@ -25,18 +25,42 @@ export const TIMELINE_DATA = {
       title: "Birth of HTML",
       text: "Tim Berners-Lee creates the first version of HTML.",
       image: "/images/html-headings.png",
+      desc: "The first version created by Tim Berners-Lee, used purely for scientific documents and simple hypertext. It had no styling, no images, and almost no structure.",
     },
     {
       year: "1995",
       title: "HTML 2.0",
       text: "Standardization begins...",
       image: "/images/HTML-5-Badge-Logo.png",
+      desc: "The first standardized version by the IETF. Introduced forms, basic tables, and more document structure.",
     },
     {
       year: "1997",
       title: "HTML 3.2",
       text: "Tables, applets, layout improvements...",
       image: "/images/html-as-div.jpg",
+      desc: "Added tables, applets, text flow, and layout tricks (before CSS was common).",
+    },
+    {
+      year: "1999",
+      title: "HTML 4.01",
+      text: "Separation of content and style...",
+      image: "/images/html4.png",
+      desc: "Separated structure from presentation. Encouraged external CSS. Introduced id, class, and scripting improvements.",
+    },
+    {
+      year: "2000",
+      title: "XHTML Era",
+      text: "Stricter syntax rules...",
+      image: "/images/xhtml.png",
+      desc: "XML-based HTML. Stricter, more structured, often too rigid.",
+    },
+    {
+      year: "2014 +",
+      title: "HTML5 ",
+      text: "Modern web capabilities...",
+      image: "/images/html5.png",
+      desc: "Game-changer. Added semantic tags (<header>, <nav>, <article>), video, audio, canvas, storage APIs, and more.",
     },
   ],
   css: [

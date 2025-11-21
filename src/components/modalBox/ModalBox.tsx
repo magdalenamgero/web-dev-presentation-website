@@ -8,12 +8,14 @@ import styles from "./ModalBox.module.scss";
 export default function ModalBox({
   title,
   text,
+  desc,
   image,
   code,
   onClose,
 }: {
   title: string;
   text: string;
+  desc?: string;
   image?: string;
   code?: string;
   onClose: () => void;
@@ -37,7 +39,13 @@ export default function ModalBox({
 
         <h2>{title}</h2>
         <p>{text}</p>
-
+        <div className={styles.modalContent}>
+          {desc && (
+            <div className={styles.desc}>
+              <p>{desc}</p>
+            </div>
+          )}
+        </div>
         <div className={styles.modalContent}>
           {image && (
             <div className={styles.imageWrapper}>

@@ -13,6 +13,7 @@ export default function HtmlPage() {
     description?: string;
     image?: string;
     code?: string;
+    desc?: string;
   }
 
   const [selectedItem, setSelectedItem] = useState<TimelineItemData | null>(
@@ -42,13 +43,17 @@ export default function HtmlPage() {
         ))}
       </div>
       {selectedItem && (
-        <ModalBox
-          title={selectedItem.title}
-          text={selectedItem.description || ""}
-          image={selectedItem.image}
-          code={selectedItem.code}
-          onClose={handleCloseModal}
-        />
+        <>
+          {console.log(selectedItem)}
+          <ModalBox
+            title={selectedItem.title}
+            text={selectedItem.description || ""}
+            desc={selectedItem.desc || ""}
+            image={selectedItem.image}
+            code={selectedItem.code}
+            onClose={handleCloseModal}
+          />
+        </>
       )}
       <section className={styles.descriptionSection}>
         <h2>About HTML</h2>
