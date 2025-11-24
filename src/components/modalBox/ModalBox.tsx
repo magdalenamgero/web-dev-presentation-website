@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+// import Image from "next/image";
 import styles from "./ModalBox.module.scss";
 
 export default function ModalBox({
