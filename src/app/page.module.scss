@@ -50,6 +50,7 @@
   color: var(--blue);
   position: relative;
   cursor: default;
+  z-index: 1;
 
   &::before,
   &::after {
@@ -135,6 +136,7 @@
   border-radius: 12px;
   box-shadow: 0 2px 12px rgb(0 2 8 / 15%);
   margin: 100px auto 50px auto;
+  z-index: 0;
 }
 
 .timeline {

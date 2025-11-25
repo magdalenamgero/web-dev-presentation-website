@@ -27,7 +27,7 @@ export default function CssAbout() {
         </p>
         <br />
 
-        <ul>
+        <ul style={{ paddingLeft: "0.8rem" }}>
           <li>
             <strong>Selectors</strong> – Target elements to apply styles (for
             example: classes, IDs, tags).
@@ -116,7 +116,7 @@ export default function CssAbout() {
         </p>
         <br />
 
-        <ul>
+        <ul style={{ paddingLeft: "0.8rem" }}>
           <li>
             <strong>CSS Variables</strong> – Reusable values for colors or
             spacing.

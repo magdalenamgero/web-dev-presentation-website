@@ -25,7 +25,7 @@ export default function HtmlAbout() {
           Some of the most important building blocks include:
         </p>
         <br />
-        <ul>
+        <ul style={{ paddingLeft: "0.8rem" }}>
           <li>
             <strong>Divs</strong> – General-purpose containers used to group or
             structure content. They act like empty boxes you can style or
@@ -73,29 +73,30 @@ export default function HtmlAbout() {
           the meaning of content rather than just its appearance:
         </p>
         <br />
-        <ul>
+        <ul style={{ paddingLeft: "0.8rem" }}>
           <li>
-            <strong>"header"</strong> – A page or section header, usually
-            containing a title or navigation.
+            <strong>&quot;header&quot;</strong> – A page or section header,
+            usually containing a title or navigation.
           </li>
           <br />
           <li>
-            <strong>"nav"</strong> – A dedicated area for menus or navigation
-            links.
+            <strong>&quot;nav&quot;</strong> – A dedicated area for menus or
+            navigation links.
           </li>
           <br />
           <li>
-            <strong>"section"</strong> – A meaningful grouping of related
-            content.
+            <strong>&quot;section&quot;</strong> – A meaningful grouping of
+            related content.
           </li>
           <br />
           <li>
-            <strong>"article"</strong> – A self-contained piece of content, like
-            a post or card.
+            <strong>&quot;article&quot;</strong> – A self-contained piece of
+            content, like a post or card.
           </li>
           <br />
           <li>
-            <strong>"footer"</strong> – Bottom information, credits, or links.
+            <strong>&quot;footer&quot;</strong> – Bottom information, credits,
+            or links.
           </li>
         </ul>
         <br />
@@ -141,7 +142,7 @@ export default function HtmlAbout() {
           all modern web experiences:
         </p>
         <br />
-        <ul>
+        <ul style={{ paddingLeft: "0.8rem" }}>
           <li>HTML provides structure</li>
           <li>CSS provides design</li>
           <li>JavaScript provides interactivity</li>

@@ -26,11 +26,10 @@ export default function JavascriptAbout() {
           Important beginner concepts include:
         </p>
         <br />
-
-        <ul>
+        <ul style={{ paddingLeft: "0.8rem" }}>
           <li>
             <strong>Variables</strong> – Used to store values. Modern JavaScript
-            uses "let" and "const".
+            uses &quot;let&quot; and &quot;const&quot;.
           </li>
           <br />
           <div>
@@ -149,6 +148,52 @@ console.log(fruits);         // ["apple", "banana", "orange", "kiwi"]
           </div>
           <br />
           <li>
+            <strong>Conditional Statements</strong> – Allow your code to make
+            decisions and run different actions based on conditions.
+          </li>
+          <br />
+          <div>
+            <pre
+              style={{
+                whiteSpace: "pre-wrap",
+                backgroundColor: "white",
+                padding: "0.5rem",
+                width: "fit-content",
+                borderRadius: "10px",
+              }}
+            >
+              {`// IF
+let age = 20;
+
+if (age >= 18) {
+  console.log("You are an adult.");
+}
+
+// IF ELSE
+let time = 15;
+
+if (time < 12) {
+  console.log("Good morning");
+} else {
+  console.log("Good afternoon");
+}
+
+// ELSE IF
+let score = 85;
+
+if (score >= 90) {
+  console.log("A grade");
+} else if (score >= 80) {
+  console.log("B grade");
+} else {
+  console.log("Try again!");
+}
+`}
+            </pre>
+          </div>
+          <br />
+
+          <li>
             <strong>DOM Manipulation</strong> – Changing HTML content or styling
             using JavaScript.
           </li>
@@ -231,7 +276,7 @@ console.log(fruits);         // ["apple", "banana", "orange", "kiwi"]
         </p>
         <br />
 
-        <ul>
+        <ul style={{ paddingLeft: "0.8rem" }}>
           <li>
             <strong>Optional Chaining</strong> – Safely access nested
             properties: user?.profile?.email
@@ -239,7 +284,7 @@ console.log(fruits);         // ["apple", "banana", "orange", "kiwi"]
           <br />
           <li>
             <strong>Nullish Coalescing</strong> – Default values: name ??
-            "Guest"
+            &quot;Guest&quot;
           </li>
           <br />
           <li>
