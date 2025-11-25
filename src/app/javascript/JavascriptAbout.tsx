@@ -33,81 +33,191 @@ export default function JavascriptAbout() {
             uses "let" and "const".
           </li>
           <br />
+          <div>
+            <pre
+              style={{
+                whiteSpace: "pre-wrap",
+                backgroundColor: "white",
+                padding: "0.5rem",
+                width: "fit-content",
+                borderRadius: "10px",
+              }}
+            >
+              {`// Using let (CAN be reassigned)
+
+let counter = 0;
+counter = counter + 1;      // 1
+counter + 1;                // 2
+
+// Using const (CANNOT be reassigned)
+
+const pi = 3.14159;
+pi = 3.2;                   // Error: cannot reassign const
+`}
+            </pre>
+          </div>
+          <br />
           <li>
             <strong>Data Types</strong> – Common ones are strings, numbers,
             booleans, arrays, objects, and null/undefined.
           </li>
+          <br />
+          <div>
+            <pre
+              style={{
+                whiteSpace: "pre-wrap",
+                backgroundColor: "white",
+                padding: "0.5rem",
+                width: "fit-content",
+                borderRadius: "10px",
+              }}
+            >
+              {`let name = "Alice";        // string
+let age = 25;              // number
+let happy = true;          // boolean
+let nothing = null;        // null
+let notAssigned;           // undefined
+let id = Symbol("id");     // symbol
+`}
+            </pre>
+          </div>
           <br />
           <li>
             <strong>Functions</strong> – Reusable blocks of code. They take
             input, perform work, and return output.
           </li>
           <br />
+          <div>
+            <pre
+              style={{
+                whiteSpace: "pre-wrap",
+                backgroundColor: "white",
+                padding: "0.5rem",
+                width: "fit-content",
+                borderRadius: "10px",
+              }}
+            >
+              {`function greet(name) {
+  return "Hello " + name;
+}
+`}
+            </pre>
+            <br />
+          </div>
           <li>
             <strong>Objects</strong> – Collections of key/value pairs. They
             represent real-world things.
           </li>
           <br />
+          <div>
+            <pre
+              style={{
+                whiteSpace: "pre-wrap",
+                backgroundColor: "white",
+                padding: "0.5rem",
+                width: "fit-content",
+                borderRadius: "10px",
+              }}
+            >
+              {`const person = { name: "Mark", age: 30 };
+`}
+            </pre>
+          </div>
+          <br />
           <li>
             <strong>Arrays</strong> – Ordered lists of data.
           </li>
+          <br />
+          <div>
+            <pre
+              style={{
+                whiteSpace: "pre-wrap",
+                backgroundColor: "white",
+                padding: "0.5rem",
+                width: "fit-content",
+                borderRadius: "10px",
+              }}
+            >
+              {`const fruits = ["apple", "banana", "orange"];
+              
+fruits.push("kiwi");
+console.log(fruits[0]);      // "apple"
+console.log(fruits.length);  // 4
+console.log(fruits);         // ["apple", "banana", "orange", "kiwi"]
+`}
+            </pre>
+          </div>
           <br />
           <li>
             <strong>DOM Manipulation</strong> – Changing HTML content or styling
             using JavaScript.
           </li>
           <br />
+          <div>
+            <pre
+              style={{
+                whiteSpace: "pre-wrap",
+                backgroundColor: "white",
+                padding: "0.5rem",
+                width: "fit-content",
+                borderRadius: "10px",
+              }}
+            >
+              {`document.querySelector("#myDiv").textContent = "Hello World!";
+`}
+            </pre>
+          </div>
+          <br />
           <li>
             <strong>Events</strong> – Code that runs when something happens,
             like a button click.
           </li>
+          <br />
+          <div>
+            <pre
+              style={{
+                whiteSpace: "pre-wrap",
+                backgroundColor: "white",
+                padding: "0.5rem",
+                width: "fit-content",
+                borderRadius: "10px",
+              }}
+            >
+              {`button.addEventListener("click", () => {
+  console.log("Button clicked!");
+});
+`}
+            </pre>
+          </div>
           <br />
           <li>
             <strong>JSON</strong> – A text format for sending and storing data.
           </li>
         </ul>
         <br />
-
-        <p
-          style={{
-            marginTop: "1rem",
-            color: "var(--darkorange)",
-            fontWeight: "bold",
-          }}
-        >
-          Here are a few beginner-friendly JavaScript examples:
-        </p>
-        <br />
-
-        <pre style={{ whiteSpace: "pre-wrap" }}>
-          {`
-// A simple function
-function greet(name) {
-  return "Hello " + name;
+        <div>
+          <pre
+            style={{
+              whiteSpace: "pre-wrap",
+              backgroundColor: "white",
+              padding: "0.5rem",
+              width: "fit-content",
+              borderRadius: "10px",
+            }}
+          >
+            {`{
+  "name": "Maria",
+  "age": 28,
+  "isStudent": false,
+  "skills": ["JavaScript", "HTML", "CSS"],
+  "address": {
+    "city": "Berlin",
+    "country": "Germany"
+  }
 }
-
-// Variables
-const age = 25;
-let counter = 0;
-
-// Arrays
-const colors = ["red", "blue", "green"];
-
-// Objects
-const user = {
-  name: "Alice",
-  age: 30
-};
-
-// Arrow function (ES6)
-const add = (a, b) => a + b;
-
-// DOM example
-document.querySelector("#btn").addEventListener("click", () => {
-  console.log("Button clicked!");
-});
 `}
-        </pre>
+          </pre>
+        </div>
         <br />
 
         <p
@@ -138,21 +248,9 @@ document.querySelector("#btn").addEventListener("click", () => {
           </li>
         </ul>
         <br />
-
-        <pre style={{ whiteSpace: "pre-wrap" }}>
-          {`
-async function loadData() {
-  const res = await fetch("/api/data");
-  const json = await res.json();
-  console.log(json);
-}
-`}
-        </pre>
-        <br />
-
-        <p>
+        <p style={{ fontWeight: "bold" }}>
           JavaScript brings websites to life and lets developers create
-          everything from simple interactions to full web applications.
+          everything from simple interactions to full web apps.
         </p>
       </>
     </section>

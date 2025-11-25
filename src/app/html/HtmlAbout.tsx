@@ -109,10 +109,17 @@ export default function HtmlAbout() {
           A typical HTML document follows a predictable skeleton, even though
           the browser doesn’t show it directly:
         </p>
-
-        <pre style={{ whiteSpace: "pre-wrap" }}>
-          {`
-<html>
+        <br />
+        <pre
+          style={{
+            whiteSpace: "pre-wrap",
+            backgroundColor: "white",
+            padding: "0.5rem",
+            width: "fit-content",
+            borderRadius: "10px",
+          }}
+        >
+          {`<html>
   <head>
     Metadata, title, and links to stylesheets
   </head>
@@ -140,9 +147,9 @@ export default function HtmlAbout() {
           <li>JavaScript provides interactivity</li>
         </ul>
         <br />
-        <p>
-          Understanding these basics helps beginners make sense of how websites
-          are built and how each layer works together.
+        <p style={{ fontWeight: "bold" }}>
+          Understanding these basics helps you make sense of how websites are
+          built and how each layer works together.
         </p>
       </>
     </section>

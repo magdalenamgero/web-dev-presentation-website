@@ -76,16 +76,26 @@ export default function CssAbout() {
         </p>
         <br />
 
-        <pre style={{ whiteSpace: "pre-wrap" }}>
+        <pre
+          style={{
+            whiteSpace: "pre-wrap",
+            backgroundColor: "white",
+            padding: "0.5rem",
+            width: "fit-content",
+            borderRadius: "10px",
+          }}
+        >
           {`
-/* Flexbox example */
+// Flexbox example
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Grid example */
+// Grid example
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -121,8 +131,7 @@ export default function CssAbout() {
           </li>
         </ul>
         <br />
-
-        <p>
+        <p style={{ fontWeight: "bold" }}>
           CSS transforms plain HTML into a polished, visually appealing
           experience.
         </p>
