@@ -1,3 +1,5 @@
+deployed website: https://web-dev-presentation-website.vercel.app
+
 **Web Dev Evolution — Technical Summary**
 
 This project demonstrates how core web technologies (HTML, CSS, JavaScript) work together inside a modern stack using React, Next.js, TypeScript, and SCSS.
