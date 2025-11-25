@@ -216,10 +216,8 @@
     align-items: center;
   }
   .timeline {
-    flex-direction: column;
-    flex-wrap: nowrap;
     align-items: center;
-    gap: 1rem;
+    gap: 1.2rem;
   }
 
   .descriptionSection {
@@ -252,7 +250,7 @@
   }
 
   .timeline {
-    gap: 0.5rem;
+    gap: 1.2rem;
   }
 
   .descriptionSection {

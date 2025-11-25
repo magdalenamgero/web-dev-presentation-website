@@ -96,6 +96,40 @@
   }
 }
 
+.navLink {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: var(--beige);
+    transition:
+      width 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(-50%);
+  }
+
+  &:hover,
+  &.active {
+    color: var(--beige);
+  }
+
+  &:hover::after,
+  &.active::after {
+    width: 100%;
+    left: 50%;
+  }
+}
+
 @media (max-width: 600px) {
   .nav {
     position: absolute;

@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import styles from "./Header.module.scss";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   function setMenuOpen(updater: (open: boolean) => boolean): void {
     setIsOpen(updater);
@@ -16,16 +18,28 @@ export const Header = () => {
         Web Dev Evolution
       </Link>
       <nav className={`${styles.nav} ${isOpen ? styles.open : ""}`}>
-        <Link href="/" className={styles.navLink}>
+        <Link
+          href="/"
+          className={`${styles.navLink} ${pathname === "/" ? styles.active : ""}`}
+        >
           Home
         </Link>
-        <Link href="/html" className={styles.navLink}>
+        <Link
+          href="/html"
+          className={`${styles.navLink} ${pathname === "/html" ? styles.active : ""}`}
+        >
           HTML
         </Link>
-        <Link href="/css" className={styles.navLink}>
+        <Link
+          href="/css"
+          className={`${styles.navLink} ${pathname === "/css" ? styles.active : ""}`}
+        >
           CSS
         </Link>
-        <Link href="/javascript" className={styles.navLink}>
+        <Link
+          href="/javascript"
+          className={`${styles.navLink} ${pathname === "/javascript" ? styles.active : ""}`}
+        >
           JavaScript
         </Link>
       </nav>
