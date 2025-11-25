@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./ModalBox.module.scss";
+import { useState } from "react";
 
 export default function ModalBox({
   title,
@@ -18,6 +19,8 @@ export default function ModalBox({
   code?: string;
   onClose: () => void;
 }) {
+  const [imgLoaded, setImgLoaded] = useState(false);
+
   return (
     <motion.div
       className={styles.modalOverlay}
@@ -37,17 +40,32 @@ export default function ModalBox({
 
         <h2>{title}</h2>
         <p>{text}</p>
-        <div className={styles.modalContent}>
-          {desc && (
+
+        {desc && (
+          <div className={styles.modalContent}>
             <div className={styles.desc}>
               <p>{desc}</p>
             </div>
-          )}
-        </div>
+          </div>
+        )}
+
         <div className={styles.modalContent}>
           {image && (
             <div className={styles.imageWrapper}>
-              <img src={image} alt={title} />
+              {!imgLoaded && (
+                <div className={styles.spinnerWrapper}>
+                  <div className={styles.spinner}></div>
+                </div>
+              )}
+
+              <img
+                src={image}
+                alt={title}
+                style={{
+                  display: imgLoaded ? "block" : "none",
+                }}
+                onLoad={() => setImgLoaded(true)}
+              />
             </div>
           )}
 
