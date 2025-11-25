@@ -34,6 +34,7 @@ export default function JavascriptAbout() {
           <br />
           <div>
             <pre
+              className={styles.codeBlock}
               style={{
                 whiteSpace: "pre-wrap",
                 backgroundColor: "white",
@@ -63,6 +64,7 @@ pi = 3.2;                   // Error: cannot reassign const
           <br />
           <div>
             <pre
+              className={styles.codeBlock}
               style={{
                 whiteSpace: "pre-wrap",
                 backgroundColor: "white",
@@ -88,6 +90,7 @@ let id = Symbol("id");     // symbol
           <br />
           <div>
             <pre
+              className={styles.codeBlock}
               style={{
                 whiteSpace: "pre-wrap",
                 backgroundColor: "white",
@@ -110,6 +113,7 @@ let id = Symbol("id");     // symbol
           <br />
           <div>
             <pre
+              className={styles.codeBlock}
               style={{
                 whiteSpace: "pre-wrap",
                 backgroundColor: "white",
@@ -129,6 +133,7 @@ let id = Symbol("id");     // symbol
           <br />
           <div>
             <pre
+              className={styles.codeBlock}
               style={{
                 whiteSpace: "pre-wrap",
                 backgroundColor: "white",
@@ -154,6 +159,7 @@ console.log(fruits);         // ["apple", "banana", "orange", "kiwi"]
           <br />
           <div>
             <pre
+              className={styles.codeBlock}
               style={{
                 whiteSpace: "pre-wrap",
                 backgroundColor: "white",
@@ -200,6 +206,7 @@ if (score >= 90) {
           <br />
           <div>
             <pre
+              className={styles.codeBlock}
               style={{
                 whiteSpace: "pre-wrap",
                 backgroundColor: "white",
@@ -220,6 +227,7 @@ if (score >= 90) {
           <br />
           <div>
             <pre
+              className={styles.codeBlock}
               style={{
                 whiteSpace: "pre-wrap",
                 backgroundColor: "white",
@@ -242,6 +250,7 @@ if (score >= 90) {
         <br />
         <div>
           <pre
+            className={styles.codeBlock}
             style={{
               whiteSpace: "pre-wrap",
               backgroundColor: "white",

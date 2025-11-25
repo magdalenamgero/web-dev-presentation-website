@@ -110,10 +110,10 @@ export const TIMELINE_DATA = {
   javascript: [
     {
       year: "1995",
-      title: "Birth of JavaScript",
+      title: "Birth of JS",
       text: "Created by Brendan Eich at Netscape.",
       image: "/images/Screenshot 2025-11-24 at 11.06.41.png",
-      desc: "Created in just 10 days, JavaScript began as a lightweight scripting language for browsers, enabling dynamic page behavior.",
+      desc: "Netscape needed a small scripting language for the browser. Created in just 10 days by Brendan Eich, JavaScript began as a lightweight scripting language for browsers, enabling dynamic page behavior.",
     },
     {
       year: "1997",
@@ -131,21 +131,21 @@ export const TIMELINE_DATA = {
     },
     {
       year: "2015",
-      title: "ES6 / ES2015",
+      title: "ES6",
       text: "JavaScript's biggest upgrade.",
       image: "/images/Screenshot 2025-11-24 at 11.07.33.png",
       desc: "Introduced let/const, arrow functions, classes, modules, promises, template strings, and more. A major turning point for the language.",
     },
     {
       year: "2018",
-      title: "Async/Await Era",
+      title: "Async/Await",
       text: "Cleaner asynchronous programming.",
       image: "/images/Screenshot 2025-11-24 at 11.08.03.png",
       desc: "Async/await became widely supported, making asynchronous code easier to read and write on top of Promises.",
     },
     {
       year: "2020+",
-      title: "Modern JavaScript",
+      title: "Modern JS",
       text: "Modules everywhere, optional chaining…",
       image: "/images/Screenshot 2025-11-24 at 11.08.14.png",
       desc: "Modern JavaScript includes optional chaining, nullish coalescing, private fields, top-level await, and native module support across browsers.",

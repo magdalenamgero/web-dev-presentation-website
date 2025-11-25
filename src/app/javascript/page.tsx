@@ -41,7 +41,7 @@ export default function JavascriptPage() {
             onClick={() => handleItemClick(item)}
             style={{ cursor: "pointer" }}
           >
-            <TimelineItem key={item.year} year={item.year} title={item.title} />
+            <TimelineItem year={item.year} title={item.title} />
           </div>
         ))}
       </div>
