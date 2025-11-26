@@ -39,7 +39,7 @@ export const TIMELINE_DATA = {
       title: "HTML 3.2",
       text: "Tables, applets, layout improvements...",
       image: "/images/Screenshot 2025-11-21 at 16.05.28.png",
-      desc: "Added tables, applets, text flow, and layout tricks (before CSS was common).",
+      desc: "Added tables, applets, text flow, and layout (before CSS was common).",
     },
     {
       year: "1999",
@@ -69,7 +69,7 @@ export const TIMELINE_DATA = {
       title: "CSS1 Released",
       text: "First official CSS specification.",
       image: "/images/Screenshot 2025-11-24 at 10.12.46.png",
-      desc: "The very first Cascading Style Sheets specification. Introduced typography control, basic colors, margins, borders, and the cascade concept that defines style inheritance.",
+      desc: "CSS was first proposed in 1994, by Norwegian technologist Håkon Wium Lie, who was then working at the European Organization for Nuclear Research (CERN) with Berners-Lee. This is the very first Cascading Style Sheets specification. Introduced typography control, basic colors, margins, borders, and the cascade concept that defines style inheritance.",
     },
     {
       year: "1998",

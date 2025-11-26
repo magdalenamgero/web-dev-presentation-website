@@ -78,7 +78,6 @@ let age = 25;              // number
 let happy = true;          // boolean
 let nothing = null;        // null
 let notAssigned;           // undefined
-let id = Symbol("id");     // symbol
 `}
             </pre>
           </div>
@@ -122,7 +121,15 @@ let id = Symbol("id");     // symbol
                 borderRadius: "10px",
               }}
             >
-              {`const person = { name: "Mark", age: 30 };
+              {`const person = { 
+                  name: "Mark",
+                  age: 30,
+                  isStudent: false
+              };
+
+console.log(person.name);        // "Mark"
+console.log(person.age);         // 30
+console.log(person.isStudent);   // false
 `}
             </pre>
           </div>
@@ -145,6 +152,7 @@ let id = Symbol("id");     // symbol
               {`const fruits = ["apple", "banana", "orange"];
               
 fruits.push("kiwi");
+
 console.log(fruits[0]);      // "apple"
 console.log(fruits.length);  // 4
 console.log(fruits);         // ["apple", "banana", "orange", "kiwi"]
@@ -154,7 +162,7 @@ console.log(fruits);         // ["apple", "banana", "orange", "kiwi"]
           <br />
           <li>
             <strong>Conditional Statements</strong> – Allow your code to make
-            decisions and run different actions based on conditions.
+            decisions and run different actions based on those conditions.
           </li>
           <br />
           <div>

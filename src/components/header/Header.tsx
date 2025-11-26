@@ -1,14 +1,15 @@
 "use client";
 
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import styles from "./Header.module.scss";
 import { usePathname } from "next/navigation";
-import { useState, useRef, useEffect } from "react";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const navRef = useRef<HTMLDivElement>(null);
+  // const menuRef = useRef<HTMLDivElement>(null);
 
   function setMenuOpen(updater: (open: boolean) => boolean): void {
     setIsOpen(updater);
@@ -21,13 +22,15 @@ export const Header = () => {
   };
 
   useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    document.addEventListener("touchstart", handleClickOutside); // For touch devices
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
-      document.removeEventListener("touchstart", handleClickOutside);
     };
-  }, []);
+  }, [isOpen]);
 
   return (
     <header className={styles.header}>
@@ -41,24 +44,28 @@ export const Header = () => {
         <Link
           href="/"
           className={`${styles.navLink} ${pathname === "/" ? styles.active : ""}`}
+          onClick={() => setMenuOpen(() => false)}
         >
           Home
         </Link>
         <Link
           href="/html"
           className={`${styles.navLink} ${pathname === "/html" ? styles.active : ""}`}
+          onClick={() => setMenuOpen(() => false)}
         >
           HTML
         </Link>
         <Link
           href="/css"
           className={`${styles.navLink} ${pathname === "/css" ? styles.active : ""}`}
+          onClick={() => setMenuOpen(() => false)}
         >
           CSS
         </Link>
         <Link
           href="/javascript"
           className={`${styles.navLink} ${pathname === "/javascript" ? styles.active : ""}`}
+          onClick={() => setMenuOpen(() => false)}
         >
           JavaScript
         </Link>

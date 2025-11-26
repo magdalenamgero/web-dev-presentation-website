@@ -27,15 +27,14 @@ export default function HtmlAbout() {
         <br />
         <ul style={{ paddingLeft: "0.8rem" }}>
           <li>
-            <strong>Divs</strong> – General-purpose containers used to group or
-            structure content. They act like empty boxes you can style or
-            organize.
+            <strong>Headings (h1 - h6)</strong> – Define titles and sections.
+            SEO and assistive tools rely on them to understand page structure.
           </li>
           <br />
           <li>
-            <strong>Headings (h1–h6)</strong> – Define titles and sections.
-            Search engines and assistive tools rely on them to understand page
-            structure.
+            <strong>Divs</strong> – General-purpose containers used to group or
+            structure content. They act like empty boxes you can style or
+            organize.
           </li>
           <br />
           <li>
@@ -60,6 +59,11 @@ export default function HtmlAbout() {
             <strong>Buttons</strong> – Trigger actions, often combined with
             JavaScript.
           </li>
+          <br />
+          <li>
+            <strong>Tables</strong> – Used to display structured data in rows
+            and columns, useful for comparisons and datasets.
+          </li>
         </ul>
         <br />
         <p
@@ -75,29 +79,28 @@ export default function HtmlAbout() {
         <br />
         <ul style={{ paddingLeft: "0.8rem" }}>
           <li>
-            <strong>&quot;header&quot;</strong> – A page or section header,
-            usually containing a title or navigation.
+            <strong>header</strong> – The top section with titles or
+            introductory content.
           </li>
           <br />
           <li>
-            <strong>&quot;nav&quot;</strong> – A dedicated area for menus or
-            navigation links.
+            <strong>nav</strong> – A dedicated area for menus or navigation
+            links.
           </li>
           <br />
           <li>
-            <strong>&quot;section&quot;</strong> – A meaningful grouping of
-            related content.
+            <strong>section</strong> – A meaningful grouping of related content.
           </li>
           <br />
           <li>
-            <strong>&quot;article&quot;</strong> – A self-contained piece of
-            content, like a post or card.
+            <strong>article</strong> – A self-contained piece of content, like a
+            post or card.
           </li>
           <br />
           <li>
-            <strong>&quot;footer&quot;</strong> – Bottom information, credits,
-            or links.
+            <strong>footer</strong> – Bottom information, credits, or links.
           </li>
+          <br />
         </ul>
         <br />
         <p>
